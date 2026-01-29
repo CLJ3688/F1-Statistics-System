@@ -2,8 +2,6 @@ package controller;
 
 import model.Driver;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Application {
