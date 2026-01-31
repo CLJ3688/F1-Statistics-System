@@ -18,7 +18,9 @@ public class Application {
 
         long ferrariCount = driverList.stream().filter( driver -> driver.team().equals("Ferrari")).count();
         System.out.println("\nFerrari Driver : " + ferrariCount + "\n");
-        driverList.stream().filter(driver -> driver.team().equals("Ferrari")).forEach(driver -> System.out.printf("%-5s | %-25s\n",driver.id() , driver.name()));
+        driverList.stream()
+                .filter(driver -> driver.team().equals("Ferrari"))
+                .forEach(driver -> System.out.printf("%-5s | %-25s\n",driver.id() , driver.name()));
     }
 
 }
