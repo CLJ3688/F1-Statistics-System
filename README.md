@@ -24,9 +24,19 @@
 * **DriverPodiumStats DTO** : 專門用於傳出統計結果的資料傳輸物件，確保資料在不同層級間傳遞時的型別安全。
 
 ### 2. 系統架構
-* **Service 層** (StatisticsService) : 負責所有業務邏輯運算，如過濾車隊、計算勝率、多重條件排序(隊伍 + 姓名)。
+* **Repository 層** (FileRepository) : 負責與外部資料 (CSV) 對接，將原始資料轉為 Java 物件。
+* **Service 層** (StatisticsService) : 負責接收 Repository 的原始數據所有業務邏輯運算，如過濾車隊、計算勝率、多重條件排序(隊伍 + 姓名)。
 * **View 層** (ResultPrinter) : 負責控制台 (Console) 的格式化輸出，美化 UI 介面，與運算邏輯解耦。
 * **Controller 層** (Application) : 負責流程控制。
+
+## 專案結構
+```
+.
+├── data
+│   └── drivers.csv         # 車手基礎資料
+├── src
+└── README.md
+```
 
 ### 開發日誌
 * **2026-01-29** : 建立 model package 並實作 Driver Record ; 手動建立 2024 年車手基礎資料集。
@@ -34,3 +44,5 @@
 * **2026-02-01** : **[架構重構]**  *引入 `StatisticsService` 與 `ResultPrinter` 實現職責分離。
   * 實作 `Comparator` 進行多欄位排序 (Secondary Sorting)
   * 封裝統計結果至 DTO，最佳化程式碼重用性與系統彈性
+* **2026-02-02** : 建立 FileRepository 類別，實作車手資料讀取，並處理可能異常。
+* **2026-02-03** : [預計] 實作賽事結果讀取。
