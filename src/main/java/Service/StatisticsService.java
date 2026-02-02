@@ -1,5 +1,6 @@
 package Service;
 
+import Repository.FileRepository;
 import model.Driver;
 import model.RaceResult;
 
@@ -10,8 +11,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class StatisticsService {
+    FileRepository fileRepository = new FileRepository();
     //get basic Data Set
-    List<Driver> driverList = Driver.get2024DriverList();
+    List<Driver> driverList = fileRepository.get2024Drivers("Driver_Details.csv");
     List<RaceResult> raceResultList = RaceResult.get2024RaceResults();
     //Get a Map<id, name>
     Map<String, String> idToNameMap = driverList.stream()

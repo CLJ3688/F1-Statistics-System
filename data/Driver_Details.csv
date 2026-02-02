@@ -1,0 +1,23 @@
+id,code,forename,surname,dob,nationality,team
+1,VER,Max,Verstappen,1997/9/30,Dutch,Red Bull Racing
+2,SAR,Logan,Sargeant,2000/12/31,American,Williams
+3,RIC,Daniel,Ricciardo,1989/7/1,Australian,RB
+4,NOR,Lando,Norris,1999/11/13,British,McLaren
+10,GAS,Pierre,Gasly,1996/2/7,French,Alpine
+11,PER,Sergio,Perez,1990/1/26,Mexican,Red Bull Racing
+14,ALO,Fernando,Alonso,1981/7/29,Spanish,Aston Martin Aramco
+16,LEC,Charles,Leclerc,1997/10/16,Monegasque,Ferrari
+18,STR,Lance,Stroll,1998/10/29,Canadian,Aston Martin Aramco
+20,MAG,Kevin,Magnussen,1992/10/5,Danish,Haas
+22,TSU,Yuki,Tsunoda,2000/5/11,Japanese,RB
+23,ALB,Alexander,Albon,1996/3/23,Thai,Williams
+24,ZHO,Guanyu,Zhou,1999/5/30,Chinese,Kick Sauber
+27,HUL,Nico,Hulkenberg,1987/8/19,German,Haas
+31,OCO,Esteban,Ocon,1996/9/17,French,Alpine
+38,BEA,Oliver,Bearman,2005/5/8,British,Ferrari
+40,LAW,Liam,Lawson,2002/2/11,New Zealander,RB
+44,HAM,Lewis,Hamilton,1985/1/7,British,Mercedes
+55,SAI,Carlos,Sainz,1994/9/1,Spanish,Ferrari
+63,RUS,George,Russell,1998/2/15,British,Mercedes
+77,BOT,Valtteri,Bottas,1989/8/28,Finnish,Kick Sauber
+81,PIA,Oscar,Piastri,2001/4/6,Australian,McLaren
