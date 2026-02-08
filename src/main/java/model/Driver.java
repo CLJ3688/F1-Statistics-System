@@ -1,5 +1,5 @@
 package model;
 
-public record Driver(String id, String name, String team) {
+public record Driver(String driverId, String name) {
 }
 
