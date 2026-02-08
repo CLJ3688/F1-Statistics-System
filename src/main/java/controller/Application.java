@@ -9,13 +9,18 @@ public class Application {
         StatisticsService statisticsService = new StatisticsService();
         ResultPrinter resultPrinter = new ResultPrinter();
 
-        //Print all driver (2024)
+        //Print all driver
         resultPrinter.printAllDriver(statisticsService.getAllDrivers());
 
-        //Get specific team driver stand on podium data list
-        List<StatisticsService.DriverPodiumStats> driverPodiumStatsList = statisticsService.getDriverPodiumStats("Red Bull Racing");
+        //Print 2023 raceResult
+        resultPrinter.printRaceResult(statisticsService.getRaceResult(),"2023");
 
-        resultPrinter.printDriverPodiumStats(driverPodiumStatsList,"Red Bull Racing");
+
+
+        //Get specific team driver stand on podium data list
+        //List<StatisticsService.DriverPodiumStats> driverPodiumStatsList = statisticsService.getDriverPodiumStats("Red Bull Racing");
+
+        //resultPrinter.printDriverPodiumStats(driverPodiumStatsList,"Red Bull Racing");
     }
 
 }
